@@ -30,7 +30,7 @@ Route::get('movie/{id}', 'MovieController@show')->middleware('auth:api');
 Route::post('movie', 'MovieController@store')->middleware('auth:api');
 
 //Update movie
-Route::put('movie', 'MovieController@store')->middleware('auth:api');
+Route::put('movie', 'MovieController@store');
 
 //Delete Movie
 Route::delete('movie/{id}', 'MovieController@destroy')->middleware('auth:api');
